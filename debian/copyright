@@ -1,0 +1,65 @@
+Files: *
+Copyright: 2013, Qualcomm Atheros, Inc
+License: BSD-3-clause
+
+Files: target_firmware/include/*
+Copyright: 2016, Oleksij Rempel <linux@rempel-privat.de>
+ 2013, Qualcomm Atheros, Inc
+License: BSD-3-clause
+
+Files: target_firmware/magpie_fw_dev/target/cmnos/k2_fw_cmnos_printf.c
+Copyright: 2002, Gary Thomas
+ 1998-2002, Red Hat, Inc
+License: eCos license
+
+Files: target_firmware/magpie_fw_dev/target/hif/usb_api_main_patch.c
+Copyright: 2016, Oleksij Rempel <linux@rempel-privat.de>
+ 2013, Qualcomm Atheros, Inc
+License: BSD-3-clause
+
+Files: target_firmware/magpie_fw_dev/target/inc/asf_queue.h
+Copyright: 1991, 1993, The Regents of the University of California.
+License: BSD-3-clause
+
+Files: target_firmware/magpie_fw_dev/target/inc/xtensa-elf/*
+Copyright: 1998-2010, 2013, Tensilica Inc
+License: Expat
+
+Files: target_firmware/magpie_fw_dev/target/inc/xtensa/*
+Copyright: 1998-2010, 2013, Tensilica Inc
+License: Expat
+
+Files: target_firmware/magpie_fw_dev/target/init/app_start.h
+Copyright: 2016, Oleksij Rempel <linux@rempel-privat.de>
+ 2013, Qualcomm Atheros, Inc
+License: BSD-3-clause
+
+Files: target_firmware/wlan/_ieee80211.h
+ target_firmware/wlan/ieee80211.h
+Copyright: 2002-2005, Sam Leffler, Errno Consulting
+ 2001, Atsushi Onoe
+License: BSD-3-clause or GPL-2
+
+Files: target_firmware/wlan/ah_osdep.h
+Copyright: 2013, Qualcomm Atheros, Inc
+ 2002-2004, Sam Leffler, Errno Consulting, Atheros
+License: BSD-3-clause
+
+Files: target_firmware/wlan/if_ath_pci.c
+ target_firmware/wlan/if_ath_pci.h
+Copyright: 2013, Qualcomm Atheros, Inc
+ 2004, Atheros Communications, Inc
+ 2002-2004, Sam Leffler, Errno Consulting
+License: BSD-3-clause or GPL-2
+
+Files: target_firmware/wlan/if_athrate.h
+Copyright: 2013, Qualcomm Atheros, Inc
+ 2004, Video54 Technologies, Inc
+ 2004, Sam Leffler, Errno Consulting
+License: BSD-3-clause or GPL-2
+
+Files: target_firmware/wlan/if_llc.h
+Copyright: 2013, Qualcomm Atheros, Inc
+ 2002-2004, Sam Leffler, Errno Consulting
+License: BSD-4-clause or GPL-2
+

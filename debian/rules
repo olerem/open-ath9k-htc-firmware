@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+include debian/cross-toolchain.mk
+
+# We build a firmware, so we do not link to the ssp libraries
+export DEB_BUILD_MAINT_OPTIONS = hardening=-stackprotector
+
+%:
+	dh $@
+
+override_dh_auto_configure: $(stamp)gcc_xtensa-elf
+
+override_dh_auto_clean:
+	dh_clean
+	rm -rf $(toolchain_dir)
+	$(MAKE) -C target_firmware clean
+
+override_dh_auto_build-indep:
+	CROSS_COMPILE="$(toolchain_dir)/bin/xtensa-elf-" $(MAKE) -C target_firmware
+
+override_dh_auto_install-indep:
+	mkdir -p $(CURDIR)/debian/firmware-ath9k-htc/lib/firmware/ath9k_htc
+	install -m644 target_firmware/htc_*.fw $(CURDIR)/debian/firmware-ath9k-htc/lib/firmware/ath9k_htc
