@@ -26,6 +26,6 @@ Section: debug
 Depends: ${misc:Depends}
 Conflicts:
 Suggests:
-Description: Atheros ath9k-htc Firmware ELF file
+Description: QCA ath9k-htc Firmware ELF file
  Full unstripped ELF file for debugging the opensource version of
- Atheros ath9k-htc Firmware. Supported chips are: ar9271 and ar7010.
+ QCA ath9k-htc Firmware. Supported chips are: ar9271 and ar7010.
