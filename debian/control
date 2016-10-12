@@ -22,6 +22,7 @@ Description: QCA ath9k-htc Firmware
 Package: firmware-ath9k-htc-dbgsym
 Architecture: all
 Multi-Arch: foreign
+Section: debug
 Depends: ${misc:Depends}
 Conflicts:
 Suggests:
