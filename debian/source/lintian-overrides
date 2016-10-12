@@ -1,0 +1,6 @@
+source-is-missing sboot/make_opt/lib/_vectors.o
+source-is-missing sboot/make_opt/lib/crt1-tiny.o
+source-is-missing sboot/magpie_1_1/image/output/asic/rom.asic.out
+source-is-missing sboot/magpie_1_1/image/output/fpga/rom.fpga.out
+source-is-missing sboot/magpie_1_1/sboot/athos/src/_vectors.o
+source-is-missing sboot/magpie_1_1/sboot/athos/src/crt1-tiny.o
