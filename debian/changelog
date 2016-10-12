@@ -1,4 +1,4 @@
-firmware-ath9k-htc (1.4.0-25-gf6af791-1) unstable; urgency=low
+open-ath9k-htc-firmware (1.4.0-25-gf6af791-1) unstable; urgency=low
 
   * Initial Release. Closes: #751339, #711470, #810047, #810672
 
