@@ -1,3 +1,4 @@
+# upstream includes some ROM binaries for the reference, they're all removed before building
 source-is-missing sboot/make_opt/lib/_vectors.o
 source-is-missing sboot/make_opt/lib/crt1-tiny.o
 source-is-missing sboot/magpie_1_1/image/output/asic/rom.asic.out
