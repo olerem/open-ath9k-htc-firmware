@@ -1,2 +1,9 @@
 # the copyright file includes upstream licenses verbatim
 firmware-ath9k-htc binary: old-fsf-address-in-copyright-file
+
+open-ath9k-htc-firmware source: source-is-missing sboot/make_opt/lib/_vectors.o *
+open-ath9k-htc-firmware source: source-is-missing sboot/make_opt/lib/crt1-tiny.o *
+open-ath9k-htc-firmware source: source-is-missing sboot/magpie_1_1/image/output/asic/rom.asic.out *
+open-ath9k-htc-firmware source: source-is-missing sboot/magpie_1_1/image/output/fpga/rom.fpga.out *
+open-ath9k-htc-firmware source: source-is-missing sboot/magpie_1_1/sboot/athos/src/_vectors.o *
+open-ath9k-htc-firmware source: source-is-missing sboot/magpie_1_1/sboot/athos/src/crt1-tiny.o *
