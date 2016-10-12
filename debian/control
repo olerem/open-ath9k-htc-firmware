@@ -1,4 +1,4 @@
-Source: open-ath9k-htc-firmware
+Source: firmware-ath9k-htc
 Maintainer: Oleksij Rempel <linux@rempel-privat.de>
 Uploaders:
 Section: misc
