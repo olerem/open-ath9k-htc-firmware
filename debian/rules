@@ -24,4 +24,6 @@ override_dh_auto_build-indep:
 override_dh_install-indep:
 	mv target_firmware/htc_9271.fw target_firmware/htc_9271-$(FW_FILENAME_VER).fw
 	mv target_firmware/htc_7010.fw target_firmware/htc_7010-$(FW_FILENAME_VER).fw
-	dh_install target_firmware/htc_*.fw /lib/firmware/ath9k_htc/
+	mv target_firmware/build/k2/fw.elf target_firmware/htc_9271-$(FW_FILENAME_VER).elf
+	mv target_firmware/build/magpie/fw.elf target_firmware/htc_7010-$(FW_FILENAME_VER).elf
+	dh_install
