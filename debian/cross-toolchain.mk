@@ -1,3 +1,9 @@
+# Copyright (c) 2016 Aurelien Jarno <aurelien@aurel32.net>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
 #
 # This makefile allows to quickly build minimalistic cross-compilers
 # for various targets. They only support the C language and do not
