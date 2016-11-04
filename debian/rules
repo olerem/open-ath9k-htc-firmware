@@ -21,7 +21,7 @@ override_dh_clean:
 	dh_clean
 
 override_dh_auto_build-indep:
-	CROSS_COMPILE="$(toolchain_dir)/bin/xtensa-elf-" $(MAKE) -C target_firmware
+	CROSS_COMPILE="$(toolchain_dir)/bin/xtensa-elf-" VERBOSE=1 $(MAKE) -C target_firmware
 
 override_dh_install-indep:
 	mv target_firmware/htc_9271.fw target_firmware/htc_9271-$(FW_FILENAME_VER).fw
