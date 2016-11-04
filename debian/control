@@ -8,7 +8,7 @@ Build-Depends:
  binutils-source,
  bison,
  cmake,
- debhelper (>= 9),
+ debhelper (>= 10),
  flex,
  gcc-6-source,
  libmpc-dev,
