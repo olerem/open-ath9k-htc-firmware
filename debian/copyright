@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: The firmware for QCA AR7010/AR9271 802.11n USB NICs
 Source: https://github.com/qca/open-ath9k-htc-firmware/
 Comment: contents of the upstream NOTICE.TXT verbatim:
