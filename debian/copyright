@@ -1,7 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: The firmware for QCA AR7010/AR9271 802.11n USB NICs
 Source: https://github.com/qca/open-ath9k-htc-firmware/
-Comment: contents of the upstream NOTICE.TXT verbatim:
+Files-Excluded: sboot/* docs/*
+Comment: Directories sboot/ and docs/ of upstream repository contain binary
+ objects that are useful for reference and in-depth debugging purposes only
+ and are not needed to generate a firmware image, hence they're removed
+ during repacking to provide a DFSG-compliant tarball of original sources.
+ .
+ Contents of the upstream NOTICE.TXT verbatim:
+ .
  This NOTICE.TXT file contains certain notices of software components included
  with the software that QUALCOMM ATHEROS Incorporated ('Qualcomm Atheros') is
  required to provide you. Notwithstanding anything in the notices in this file,
@@ -155,13 +162,13 @@ Files: *
 Copyright: 2013, Qualcomm Atheros, Inc.
 License: BSD-3-clause-from-Qualcomm-Atheros
 
-Files: debian/cross-toolchain.mk
-Copyright: 2016, Aurelien Jarno <aurelien@aurel32.net>
-License: GPL-2+
-
 Files: debian/*
 Copyright: 2016, Paul Fertser <fercerpav@gmail.com>
 	   2016, Oleksij Rempel <linux@rempel-privat.de>
+License: GPL-2+
+
+Files: debian/cross-toolchain.mk
+Copyright: 2016, Aurelien Jarno <aurelien@aurel32.net>
 License: GPL-2+
 
 Files: scripts/*
