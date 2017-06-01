@@ -23,7 +23,7 @@ BINUTILS_DIR=binutils-$(BINUTILS_VER)
 BINUTILS_PATCHES=local/patches/binutils.patch local/patches/binutils-2.27_fixup.patch
 BINUTILS_SUM=369737ce51587f92466041a97ab7d2358c6d9e1b6490b3940eb09fb0a9a6ac88
 
-GCC_VER=6.2.0
+GCC_VER=6.3.0
 GCC_URL=https://ftp.gnu.org/gnu/gcc/gcc-$(GCC_VER)/gcc-$(GCC_VER).tar.bz2
 GCC_TAR=gcc-$(GCC_VER).tar.bz2
 GCC_DIR=gcc-$(GCC_VER)
