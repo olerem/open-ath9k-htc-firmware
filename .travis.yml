@@ -22,3 +22,22 @@ script:
   - make toolchain
   - make -C target_firmware
   - make -C target_firmware clean
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "D4QmMQuqmBzrHgdoDUZIV83xh30sPguhB3abmFBCGsingZvWHPGmicna9jbjBBRj0uALcd2d/fFyWjWQ2hHtuUY6nMJh+1a3Elzf2t07b3htrU8KqWmdZkYKB/GamqUjMgbMTPFFVjzYuw4i9jCn0n3o3z//Z6ueWEhTaDl2he2JghVhMQDTnP8qr/LKHbLOmqk/uhlMHD9GW9jPIMds/qWXZLgdduKNIhvq4o6B0fHf9a44dnyMK2ivI/TAFrB5Dy4u3djl5ebjs2BjP8yaXmgDyscet13bPzanoR+sMf9gxZTs/yqNk7tcsHYjEowyezaiWUOMX6kR+aSoKMtF5Iz1Sb9MkvWhrNDc9EQBoJ+2kczqJ6HPSMfvJg2EyTvGs3+Gse9NTtI/N6g97dGhhCGB+I3JH0S+oBNA1kzweqR7DW272T59XV930zfMSy3WPuVWsbkjl32ZveNw/dnu/ZgbFFC2wf9YA9XAG8Dw0NeZtX4A1q4QmR3Ni39jcuvvb95avhd4ViGDWs8yOiGCGnQLAr8DgtibV5vCyG5E0yki+K4DGhZAysC0H/DBvhAgz+phLMekIbMMwaAPtaghHLjirTXKGcg3BwOXvtx78LsrVJGm+P2RnJ8gCHMDVAE6wGct+lGdpv/rTnGAvuyalqW2h2KzK26NsxMOHgifhlA="
+
+before_install:
+  - echo -n | openssl s_client -connect https://scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
+addons:
+  coverity_scan:
+    project:
+      name: "olerem/open-ath9k-htc-firmware"
+      description: "<Your project description here>"
+    notification_email: linux@rempel-privat.de
+    build_command_prepend: "make toolchain"
+    build_command: "make -C target_firmware"
+    branch_pattern: coverity_scan
